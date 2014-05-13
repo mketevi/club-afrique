@@ -46,7 +46,7 @@ require "./functions.php";
                         </div>
                     </form>
                 </div>
-                <a class="place-left" href="#" title="">
+                <a class="place-left" href="./" title="">
                     <h1>Club Afrique</h1>
                 </a>
             </div>
@@ -68,7 +68,7 @@ require "./functions.php";
 						<div class="element place-right">
 							<a class="dropdown-toggle" href="#">Connect</a>
 								<ul class="dropdown-menu place-right" data-role="dropdown">
-								<li><a href="#">Connect</a></li>
+								<li><a href="./connexion.php">Connect</a></li>
 								<li><a href="#">Subscribe</a></li>
 								</ul>
 							</div>
@@ -153,58 +153,33 @@ require "./functions.php";
                     <div class="tile double ol-transparent"></div>
                     <div class="tile double ol-transparent"></div>
                 </div>
-<!--
-                <div class="tile-group no-margin no-padding1 clearfix" style="width: 100%;">
-                    <a href="#"><span class="tile-group-title fg-orange">NEWS <span class="icon-arrow-right-5"></span></span></a>
-                    <div class="tile quadro double-vertical ol-transparent"></div>
-                    <div class="tile double ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile double ol-transparent"></div>
-                </div>
-
-                <div class="tile-group no-margin no-padding1 clearfix" style="width: 100%;">
-                    <a href="#"><span class="tile-group-title fg-cobalt">SPORT <span class="icon-arrow-right-5"></span></span></a>
-                    <div class="tile quadro double-vertical ol-transparent"></div>
-                    <div class="tile double ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile double ol-transparent"></div>
-                </div>
--->
-            </div>
+		</div>
         </div> <!-- End of tiles -->
 		<nav class="navigation-bar bottom" style="height: 35px;">
 					<nav class="navigation-bar-content" style="height: 50px;">
 						<div class="element">
-							<button class=" element button">News</button>
+							<button class=" element button">Designed using Metro UI CSS 2.0</button>
 						</div>
 						<span class="element-divider"></span>
 						<div class="element">
-							<button class=" element button">Check relics</button>
+							<button class=" element button">Contact the administrator</button>
 						</div>
 						<span class="element-divider"></span>
-						<div class="element">
-							<button class=" element button">AITB for Afrique</button>
+						
+
+						<div class="element place-right">
+							 <span class="icon-comments"></span>
 						</div>
 						<span class="element-divider"></span>
 
 						<div class="element place-right">
-							<a class="dropdown-toggle" href="#">Connect</a>
-								<ul class="dropdown-menu place-right" data-role="dropdown">
-								<li><a href="#">Connect</a></li>
-								<li><a href="#">Subscribe</a></li>
-								</ul>
-							</div>
+							 <span class="icon-cloud-5"></span>
+						</div>
+					</nav>
 			</nav>
 		</nav>
     </div>
 	</div>
-
     <script src="js/hitua.js"></script>
 
 </body>

@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+
+define("INCLUDE_CHECK", true);
+require "./functions.php";
+authenticate();
+?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -30,6 +36,7 @@
     </style>
 </head>
 <body class="metro">
+	<div class="tile-area tile-area-light" style="width: 1774px; height:860px;padding-top:0px;">
     <div class="container">
         <header class="margin20 nrm nlm">
             <div class="clearfix">
@@ -41,27 +48,30 @@
                         </div>
                     </form>
                 </div>
-                <a class="place-left" href="#" title="">
+                <a class="place-left" href="./" title="">
                     <h1>Club Afrique</h1>
                 </a>
             </div>
-
-            <div class="main-menu-wrapper">
-                <ul class="horizontal-menu nlm">
-                    <li><a href="#">news</a></li>
-                    <li><a href="#">Documents</a></li>
-                    <li><a href="#"> Alumnus Section</a></li>
-                    <li class="place-right">
-                        <a href="#" class="dropdown-toggle">Connect</a>
-                        <ul class="dropdown-menu place-right" data-show="hover">
-                            <li><a href="#">Subscribe</a></li>
-                            <li><a href="#">Connect</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </header>
-
+			    <nav class="navigation-bar" style="height: 35px;">
+					<nav class="navigation-bar-content" style="height: 50px;">
+						<div class="element">
+						<a class=" element button" href="./">
+							<button class=" element button" ><span class="icon-arrow-left-3"></span></button>
+						</a>
+						</div>
+						<span class="element-divider"></span>
+						<div class="element">
+							<button class=" element button">News</button>
+						</div>
+						<span class="element-divider"></span>
+						<div class="element">
+							<button class=" element button">AITB for Afrique</button>
+						</div>
+						<span class="element-divider"></span>
+					</nav>
+				</nav>
+				</header>
+			
 		
         <div class="main-content clearfix">
             <div class="tile-area no-padding clearfix">
@@ -77,44 +87,38 @@
                     <div class="tile quadro double-vertical ol-transparent">
                         <div class="tile-content">
                             <div class="carousel" data-role="carousel" data-height="100%" data-width="100%" data-controls="false">
-                                <div class="slide">
-                                    <img src="images/1.jpg" />
-                                </div>
-                                <div class="slide">
-                                    <img src="images/2.jpg" />
-                                </div>
-                                <div class="slide">
-                                    <img src="images/3.jpg" />
-                                </div>
+							<?php ParcourirLesImagesDuReperoire("./photo/")?>
                             </div>
                         </div>
                     </div>
 					
-                    <div class="tile bg-lightBlue ol-transparent">
-                        <div class="tile-content icon">
-                            <span class="icon-windows"></span>
-                        </div>
-                    </div>
-                    <div class="tile bg-orange ol-transparent">
-                        <div class="tile-content icon">
-                            <span class="icon-music"></span>
-                        </div>
-                    </div>
-                    <div class="tile ol-transparent bg-teal">
+                    <a href ="https://www.facebook.com/groups/africatb/"><div class="tile bg-lightBlue ol-transparent">
                         <div class="tile-content icon">
                             <span class="icon-facebook"></span>
+                        </div>
+                    </div></a>
+					<a href ="./camera/demo/start_screen.php">
+                    <div class="tile bg-red ol-transparent">
+                        <div class="tile-content icon">
+                            <span class="icon-image"></span>
+                        </div>
+                    </div>
+					</a>
+                    <div class="tile ol-transparent bg-teal">
+                        <div class="tile-content icon">
+                            <span class="icon-folder"></span>
                         </div>
                     </div>
                     <div class="tile ol-transparent bg-green">
                         <div class="tile-content icon">
-                            <span class="icon-twitter"></span>
+                            <span class="icon-link"></span>
                         </div>
                     </div>
 
                     <div class="tile triple double-vertical ol-transparent bg-white">
                         <div class="tile-content">
                             <div class="panel no-border">
-                                <div class="panel-header bg-darkRed fg-white">news</div>
+                                <div class="panel-header bg-darkRed fg-white">our graduates</div>
                                 <div class="panel-content fg-dark nlp nrp">
                                     <img src="images/jeki_chan.jpg" class="place-left margin10 nlm ntm size2">
                                     <strong>Ce site web</strong> a été conçu par les étudiants du club afrique pour les étudiants du Club Afrique.
@@ -127,10 +131,10 @@
                     <div class="tile triple double-vertical ol-transparent bg-white">
                         <div class="tile-content">
                             <div class="panel no-border">
-                                <div class="panel-header bg-pink fg-white">entertainment</div>
+                                <div class="panel-header bg-pink fg-white">Newcomer to TB / Brest</div>
                                 <div class="panel-content fg-dark nlp nrp">
                                     <img src="images/jek_vorobey.jpg" class="place-left margin10 nlm ntm size2">
-                                    <strong> Decouvrons </strong> 
+                                    <strong> Contact us </strong> 
 									
                                 </div>
                             </div>
@@ -144,47 +148,29 @@
                     <div class="tile double ol-transparent"></div>
                     <div class="tile double ol-transparent"></div>
                 </div>
-<!--
-                <div class="tile-group no-margin no-padding1 clearfix" style="width: 100%;">
-                    <a href="#"><span class="tile-group-title fg-orange">NEWS <span class="icon-arrow-right-5"></span></span></a>
-                    <div class="tile quadro double-vertical ol-transparent"></div>
-                    <div class="tile double ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile double ol-transparent"></div>
-                </div>
-
-                <div class="tile-group no-margin no-padding1 clearfix" style="width: 100%;">
-                    <a href="#"><span class="tile-group-title fg-cobalt">SPORT <span class="icon-arrow-right-5"></span></span></a>
-                    <div class="tile quadro double-vertical ol-transparent"></div>
-                    <div class="tile double ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile ol-transparent"></div>
-                    <div class="tile double ol-transparent"></div>
-                </div>
--->
-            </div>
+		</div>
         </div> <!-- End of tiles -->
+		<nav class="navigation-bar bottom" style="height: 35px;">
+					<nav class="navigation-bar-content" style="height: 50px;">
+						<div class="element">
+							<button class=" element button">Designed using Metro UI CSS 2.0</button>
+						</div>
+						<span class="element-divider"></span>
+						<div class="element">
+							<button class=" element button">Contact the administrator</button>
+						</div>
+						<span class="element-divider"></span>
+						
+						<span class="element-divider"></span>
 
-        <footer>
-            <div class="bottom-menu-wrapper">
-                <ul class="horizontal-menu compact">
-                    <li>&copy;  Designed using 2014 Metro UI CSS</li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Legal</a></li>
-                    <li><a href="#">Advertise</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#"><img src="./images/icone_loupe_petite.gif" /></a></li>
-					
-                </ul>
-            </div>
-        </footer>
+						<div class="element place-right">
+							 <span class="icon-comments"></span>
+						</div>
+					</nav>
+			</nav>
+		</nav>
     </div>
-
+	</div>
     <script src="js/hitua.js"></script>
 
 </body>

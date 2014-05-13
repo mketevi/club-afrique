@@ -18,4 +18,17 @@ function ParcourirLesImagesDuReperoire($rep){
     closedir($Myrep); 
 }
 
+
+function authenticate(){
+  if (!isset($_SERVER['PHP_AUTH_USER'])) {
+    header('WWW-Authenticate: Basic Une authentification reSel sera nécessaire pour se connecter"');
+    header('HTTP/1.0 401 Unauthorized');
+    echo 'Authentication error please reload the page';
+    exit;
+  } else {
+    echo "<p>Bonjour, {$_SERVER['PHP_AUTH_USER']}.</p>";
+    echo "<p>Votre mot de passe est {$_SERVER['PHP_AUTH_PW']}.</p>";
+  }
+
+}
 ?>
